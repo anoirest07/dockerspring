@@ -13,6 +13,11 @@ pipeline{
 			steps {
 	      		bat 'mvn package'
 	        	}	
-		}	
+		}
+		stage ('CREATE DOCKER IMAGE') {
+			steps {
+	      		bat 'docker build'
+	        	}	
+		}
 	}
 }
