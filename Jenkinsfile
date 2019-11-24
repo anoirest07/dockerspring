@@ -4,14 +4,15 @@ pipeline{
 		maven 'Maven 3.6.2'
 	}
 	stages{
-	  stage ('Clean') {
-			steps {
+		stage ('Clean') {
+	 		steps {
 				bat 'mvn clean'
 	        	}
 		}
-	 stage ('Package') {
+	 	stage ('Package') {
 			steps {
-	      bat 'mvn package'
+	      		bat 'mvn package'
 	        	}	
 		}	
 	}
+}
