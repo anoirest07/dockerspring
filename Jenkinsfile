@@ -16,7 +16,7 @@ pipeline{
 		}
 		stage ('CREATE DOCKER IMAGE') {
 			steps {
-	      		bat 'docker build'
+	      		bat 'mvn install'
 	        	}	
 		}
 	}
